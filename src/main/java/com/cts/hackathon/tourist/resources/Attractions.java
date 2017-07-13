@@ -2,7 +2,7 @@ package com.cts.hackathon.tourist.resources;
 
 import java.util.List;
 
-import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -25,7 +25,7 @@ public class Attractions {
 	
 	AttractionsService attractionsService = new AttractionsService();
 	
-	@GET
+	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Attraction> getAttractions() {
 		
