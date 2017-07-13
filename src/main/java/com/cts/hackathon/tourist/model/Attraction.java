@@ -5,7 +5,8 @@ public class Attraction {
 
 	private String speech;
 	private String displayText;
-	private String source;
+	private String source;	
+	private Attraction data;
 
 	public Attraction() {}
 
@@ -33,11 +34,12 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, String source) {
+	public Attraction(String speech, String displayText, String source, Attraction a) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;
 		this.source = source;
+		this.data = a;
 	}
 	
 

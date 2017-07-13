@@ -12,8 +12,9 @@ public class AttractionsService {
 	}
 		
 		public List<Attraction> getAttractions(){
-			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","");
-			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","");
+			Attraction a1=null, a2=null;
+			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", a1);
+			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
 //			Object obj= new Object();
 //			obj = "k";
 //			
