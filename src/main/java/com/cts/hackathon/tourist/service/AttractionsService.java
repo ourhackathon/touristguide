@@ -14,13 +14,13 @@ public class AttractionsService {
 		public List<Attraction> getAttractions(){
 			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","");
 			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","");
-			Object obj= new Object();
-			obj = "k";
-			
+//			Object obj= new Object();
+//			obj = "k";
+//			
 			List<Attraction> attractionList = new ArrayList<Attraction>();
 			attractionList.add(attraction1);
 			attractionList.add(attraction2);
-			attractionList.add((Attraction) obj);
+//			attractionList.add((Attraction) obj);
 			return attractionList;
 		}
 	
