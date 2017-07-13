@@ -13,7 +13,7 @@ public class AttractionsService {
 		
 		public List<Attraction> getAttractions(){
 			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king");
-			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam");
+			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.");
 			
 			List<Attraction> attractionList = new ArrayList<Attraction>();
 			attractionList.add(attraction1);
