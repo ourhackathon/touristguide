@@ -1,12 +1,13 @@
 package com.cts.hackathon.tourist.model;
 
+import org.json.simple.JSONObject;
 
 public class Attraction {
 
 	private String speech;
 	private String displayText;
 	private String source;	
-	private Attraction data;
+	private JSONObject data;
 
 	public Attraction() {}
 
@@ -34,7 +35,7 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, String source, Attraction a) {
+	public Attraction(String speech, String displayText, String source, JSONObject a) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;

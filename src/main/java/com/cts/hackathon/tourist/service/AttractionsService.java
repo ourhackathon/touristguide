@@ -5,6 +5,8 @@ import java.util.List;
 import com.cts.hackathon.tourist.model.Attraction;
 import javax.json.JsonObject;
 
+import org.json.simple.JSONObject;
+
 
 public class AttractionsService {
 
@@ -14,13 +16,14 @@ public class AttractionsService {
 	}
 		
 		public List<Attraction> getAttractions(){
-			Attraction a1=null, a2=null, a3=null,a4=null,a5=null,a6=null;
-			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", a1);
-			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
-		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
-		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",a4);
-		    Attraction attraction5=new Attraction("Kashivishwanath temple","Its a famous temple in varanasi","",a5);
-		    Attraction attraction6=new Attraction("Sarnath","Its a religioud place for Baudhha people","",a6);
+			JSONObject json=new JSONObject();
+			json.put("Batman", "Spiderman");
+			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", json);
+			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", json);
+		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",json);
+		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",json);
+		    Attraction attraction5=new Attraction("Kashivishwanath temple","Its a famous temple in varanasi","",json);
+		    Attraction attraction6=new Attraction("Sarnath","Its a religioud place for Baudhha people","",json);
 //			Object obj= new Object();
 //			obj = "k";
 //			
@@ -35,15 +38,17 @@ public class AttractionsService {
 			return attractionList;
 		}
 		
+		@SuppressWarnings("unchecked")
 		public Attraction getAttraction(){
 			Attraction a1=null, a2=null, a3=null,a4=null,a5=null,a6=null;
-			JSONObject json=new JSONObject("kk");
-			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", a1);
-			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
-		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
-		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",a4);
-		    Attraction attraction5=new Attraction("Kashivishwanath temple","Its a famous temple in varanasi","",a5);
-		    Attraction attraction6=new Attraction("Sarnath","Its a religioud place for Baudhha people","",a6);
+			JSONObject json=new JSONObject();
+			json.put("Batman", "Spiderman");
+			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", json);
+//			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
+//		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
+//		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",a4);
+//		    Attraction attraction5=new Attraction("Kashivishwanath temple","Its a famous temple in varanasi","",a5);
+//		    Attraction attraction6=new Attraction("Sarnath","Its a religioud place for Baudhha people","",a6);
 //			
 			return attraction1;
 		}
