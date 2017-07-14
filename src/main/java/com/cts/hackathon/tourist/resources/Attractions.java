@@ -25,16 +25,16 @@ public class Attractions {
 	
 	AttractionsService attractionsService = new AttractionsService();
 	
-	@GET
-	@Path("/all")
-	@Produces(MediaType.APPLICATION_JSON)
-	public List<Attraction> getAttractions() {
-		
-
-		return attractionsService.getAttractions();
-		
-		//return "Attractions in Mysore are -- Brindavan Garden, Mysore Palace, Chamundeshwari Temple";
-	}
+//	@GET
+//	@Path("/all")
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public List<Attraction> getAttractions() {
+//		
+//
+//		return attractionsService.getAttractions();
+//		
+//		//return "Attractions in Mysore are -- Brindavan Garden, Mysore Palace, Chamundeshwari Temple";
+//	}
 
 	@GET
 	@Path("/single")
