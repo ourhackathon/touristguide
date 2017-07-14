@@ -37,7 +37,7 @@ public class Attractions {
 //		//return "Attractions in Mysore are -- Brindavan Garden, Mysore Palace, Chamundeshwari Temple";
 //	}
 
-	@POST
+	@GET
 	@Path("/single")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Attraction getAttraction() {
