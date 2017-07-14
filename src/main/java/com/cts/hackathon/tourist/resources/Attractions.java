@@ -3,7 +3,6 @@ package com.cts.hackathon.tourist.resources;
 import java.util.List;
 
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -37,7 +36,7 @@ public class Attractions {
 		//return "Attractions in Mysore are -- Brindavan Garden, Mysore Palace, Chamundeshwari Temple";
 	}
 
-	@POST
+	@GET
 	@Path("/single")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Attraction getAttraction() {
