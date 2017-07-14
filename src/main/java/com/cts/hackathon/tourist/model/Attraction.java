@@ -1,5 +1,6 @@
 package com.cts.hackathon.tourist.model;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 public class Attraction {
@@ -8,6 +9,15 @@ public class Attraction {
 	private String displayText;
 	private String source;	
 	private JSONObject data;
+	private JSONArray contextOut;
+
+	public JSONArray getContextOut() {
+		return contextOut;
+	}
+
+	public void setContextOut(JSONArray contextOut) {
+		this.contextOut = contextOut;
+	}
 
 	public JSONObject getData() {
 		return data;
@@ -43,12 +53,13 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, String source, JSONObject a) {
+	public Attraction(String speech, String displayText, String source, JSONObject a, JSONArray b) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;
 		this.source = source;
 		this.data = a;
+		this.contextOut = b;
 	}
 	
 
