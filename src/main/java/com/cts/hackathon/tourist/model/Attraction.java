@@ -6,10 +6,10 @@ import org.json.simple.JSONObject;
 public class Attraction {
 
 	private String speech;
-	private String displayText;
-	private String source;	
+	private String displayText;	
 	private JSONObject data;
 	private JSONArray contextOut;
+	private String source;	
 
 	public JSONArray getContextOut() {
 		return contextOut;
@@ -56,10 +56,10 @@ public class Attraction {
 	public Attraction(String speech, String displayText, JSONObject a, JSONArray b, String source) {
 		super();
 		this.speech = speech;
-		this.displayText = displayText;
-		this.source = source;
+		this.displayText = displayText;		
 		this.data = a;
 		this.contextOut = b;
+		this.source = source;
 	}
 	
 
