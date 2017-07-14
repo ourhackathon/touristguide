@@ -45,7 +45,7 @@ public class AttractionsService {
 			Attraction a1=null, a2=null, a3=null,a4=null,a5=null,a6=null;
 			JSONObject json=new JSONObject();
 			json.put("Batman", "Spiderman");
-			String msg = json.toJSONString();
+			String msg = json.toString();
 			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", msg);
 //			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
 //		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
