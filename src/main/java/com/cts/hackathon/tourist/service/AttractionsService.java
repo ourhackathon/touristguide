@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.cts.hackathon.tourist.model.Attraction;
 import javax.json.JsonObject;
+import javax.ws.rs.core.MediaType;
 
 import org.json.simple.JSONObject;
 
@@ -16,8 +17,9 @@ public class AttractionsService {
 	}
 		
 		public List<Attraction> getAttractions(){
-			JSONObject json=new JSONObject();
-			json.put("Batman", "Spiderman");
+			JSONObject msg=new JSONObject();
+			msg.put("Batman", "Spiderman");
+			String json = msg.toJSONString();
 			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", json);
 			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", json);
 		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",json);
@@ -43,7 +45,8 @@ public class AttractionsService {
 			Attraction a1=null, a2=null, a3=null,a4=null,a5=null,a6=null;
 			JSONObject json=new JSONObject();
 			json.put("Batman", "Spiderman");
-			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", json);
+			String msg = json.toJSONString();
+			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", msg);
 //			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
 //		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
 //		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",a4);

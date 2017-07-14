@@ -7,7 +7,7 @@ public class Attraction {
 	private String speech;
 	private String displayText;
 	private String source;	
-	private JSONObject data;
+	private String data;
 
 	public Attraction() {}
 
@@ -35,7 +35,7 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, String source, JSONObject a) {
+	public Attraction(String speech, String displayText, String source, String a) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;
