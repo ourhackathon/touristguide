@@ -43,7 +43,7 @@ public class AttractionsService {
 		public Attraction getAttraction(){
 			Attraction a1=null, a2=null, a3=null,a4=null,a5=null,a6=null;
 			JSONObject json=new JSONObject();
-			json.put("Batman", "Spiderman");
+			//json.put("Batman", "Spiderman");
 			JSONArray jarray = new JSONArray();
 			
 			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king", json, jarray, "dummy-source");
