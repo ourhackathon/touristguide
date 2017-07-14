@@ -9,6 +9,14 @@ public class Attraction {
 	private String source;	
 	private JSONObject data;
 
+	public JSONObject getData() {
+		return data;
+	}
+
+	public void setData(JSONObject data) {
+		this.data = data;
+	}
+
 	public Attraction() {}
 
 	public String getSpeech() {
@@ -35,11 +43,11 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, JSONObject a) {
+	public Attraction(String speech, String displayText, String source, JSONObject a) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;
-//		this.source = source;
+		this.source = source;
 		this.data = a;
 	}
 	
