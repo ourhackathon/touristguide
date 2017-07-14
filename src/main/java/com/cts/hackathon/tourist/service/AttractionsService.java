@@ -46,7 +46,7 @@ public class AttractionsService {
 			json.put("Batman", "Spiderman");
 			JSONArray jarray = new JSONArray();
 			
-			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king","", json, jarray);
+			Attraction attraction1 = new Attraction("Mysore Palace", "Its a palace of Mysore royale king", json, jarray, "dummy-source");
 //			Attraction attraction2= new Attraction("Brindavan Garden", "Its a garden built near the KSR dam.","", a2);
 //		    Attraction attraction3=new Attraction("Red fort","Its a historical fort built in Delhi","",a3);
 //		    Attraction attraction4=new Attraction("India Gate","Its a historical fort built in Delhi","",a4);

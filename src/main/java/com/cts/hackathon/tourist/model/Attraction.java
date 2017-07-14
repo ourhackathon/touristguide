@@ -53,7 +53,7 @@ public class Attraction {
 		this.source = source;
 	}
 
-	public Attraction(String speech, String displayText, String source, JSONObject a, JSONArray b) {
+	public Attraction(String speech, String displayText, JSONObject a, JSONArray b, String source) {
 		super();
 		this.speech = speech;
 		this.displayText = displayText;
