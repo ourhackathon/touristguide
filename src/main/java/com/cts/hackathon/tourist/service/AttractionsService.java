@@ -3,7 +3,7 @@ package com.cts.hackathon.tourist.service;
 import java.util.ArrayList;
 import java.util.List;
 import com.cts.hackathon.tourist.model.Attraction;
-import javax.json.Json;
+import javax.json.JsonObject;
 
 
 public class AttractionsService {
